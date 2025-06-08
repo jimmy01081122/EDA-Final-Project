@@ -1,0 +1,12 @@
+# 自動產生的二進位 / 臨時檔
+*.aig
+*.aag
+*.log
+*.vcd
+*.vvp
+*.o
+__pycache__/
+# Python 虛擬環境
+.venv/
+# 編譯出的 ABC 執行檔 (若容量很大，可排除)
+abc/
