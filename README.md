@@ -1,7 +1,7 @@
 # TSP 各類演算法 Python 實作與分析
 
 這是一個用於研究與比較多種經典演算法在解決旅行推銷員問題（Traveling Salesman Problem, TSP）上效能的專案。專案內包含了五種不同演算法的 Python 實現，並附有對其原理和在標準 TSPLIB 測資上表現的分析。
-(please using source code in finversion folder)
+(please using source code in finalversion folder)
 ## 專案特色
 
 * **五種經典演算法**：涵蓋了精確演算法、啟發式、元啟發式及近似演算法。
