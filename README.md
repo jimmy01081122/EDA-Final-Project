@@ -1,7 +1,7 @@
 # TSP 各類演算法 Python 實作與分析
 
 這是一個用於研究與比較多種經典演算法在解決旅行推銷員問題（Traveling Salesman Problem, TSP）上效能的專案。專案內包含了五種不同演算法的 Python 實現，並附有對其原理和在標準 TSPLIB 測資上表現的分析。
-
+(please using source code in finversion folder)
 ## 專案特色
 
 * **五種經典演算法**：涵蓋了精確演算法、啟發式、元啟發式及近似演算法。
@@ -37,7 +37,7 @@
 
 ### 1. 環境準備
 
-首先，您需要安裝 Python 以及本專案所需的函式庫。
+首先，需要安裝 Python 以及本專案所需的函式庫。
 
 ```bash
 pip install tsplib95 numpy psutil
@@ -49,7 +49,7 @@ pip install tsplib95 numpy psutil
 
 ### 2. 準備測資
 
-從 [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/) 等來源下載您想測試的 `.tsp` 檔案，並將其放置於與 Python 腳本相同的目錄下。
+從 [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/) 等來源下載想測試的 `.tsp` 檔案，並將其放置於與 Python 腳本相同的目錄下。
 
 ### 3. 執行腳本
 
@@ -57,15 +57,15 @@ pip install tsplib95 numpy psutil
 
 **範例 (以蟻群演算法為例):**
 
-假設您已下載 `ch130.tsp`，您可以修改 `aco_tsp.py` (假設檔案名稱如此) 中的檔案路徑變數，然後執行：
+假設您已下載 `ch130.tsp`，您可以修改 `ant.py` (假設檔案名稱如此) 中的檔案路徑變數，然後執行：
 
 ```bash
-python aco_tsp.py
+python ant.py
 ```
 
 程式將會輸出求解的路徑、總成本、執行時間以及與已知最佳解的比較。
 
-## 檔案結構說明 (推測)
+## 檔案結構說明
 
 * `dp.py`: Held-Karp 動態規劃的實作。
 * `sa.py`: 模擬退火演算法的實作。
@@ -74,4 +74,4 @@ python aco_tsp.py
 * `mst.py`: 最小生成樹近似演算法的實作。
 * `*.pdf`: 各演算法的詳細實驗數據與原理分析報告。
 * `*.tsp`: 從 TSPLIB 下載的測試案例檔案。
-* `*.opt.tour`: (若有) 對應測試案例的官方最佳路徑檔案，用於計算誤差。
+* `*.opt.tour`: 對應測試案例的官方最佳路徑檔案，用於計算誤差。
